@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SaltBay</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="logo-wrap">
+    <img src="https://files.catbox.moe/xanabx.png" alt="Logo" class="logo">
+  </div>
+
+  <div class="section">
+    <label>Hashes</label>
+    <textarea id="hashInput" rows="9" placeholder="Paste hashes here..."></textarea>
+  </div>
+
+  <div class="buttons">
+    <button id="crackBtn">Crack Hash(es)</button>
+    <button id="stopBtn" disabled>Stop</button>
+  </div>
+
+  <div class="status">
+    
+    <progress id="progressBar" value="0" max="100"></progress>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Hash</th>
+        <th>Type</th>
+        <th>Result</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody id="resultsBody"></tbody>
+  </table>
+
+  <script src="app.js"></script>
+</body>
+</html>
